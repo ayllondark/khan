@@ -13,7 +13,7 @@ function llenaCursos() {
             type: "POST",
             processData: false,
             contentType: false,
-            url: "data.php",
+            url: "../../pamervirtual/app/View/Estudioencasa/data.php",
             data: formData,
             success: function(data) {
                 var html = "";

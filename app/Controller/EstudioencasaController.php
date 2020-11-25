@@ -1524,7 +1524,16 @@ class EstudioencasaController extends AppController {
         $this->layout = 'pages';
         $this->set('titPage', '');
         $this->set('subTitPage', date("Y"));
-        $this->set('objJS', '<script src="../js/librerias/khan.js"></script>');
+        $this->set('objJS','<link rel="stylesheet" href="../css/khan_estilos.css">'.'<script src="../js/librerias/khan.js?5"></script>');
+         $usuario = $this->Session->read('usuario');
+    }
+
+    public function khaninicio() {
+        AppController::isAuthorized();
+        $this->layout = 'pages';
+        $this->set('titPage', '');
+        $this->set('subTitPage', date("Y"));
+        $this->set('objJS', '<script src="../js/librerias/khaninicio.js"></script>');
          $usuario = $this->Session->read('usuario');
     }
      

@@ -5,14 +5,13 @@
     <title>Pamer-Khan</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="khan_estilos.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="recon">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                <img class="logo" src="img/logo.png" align="logo">
+                <img class="logo" src="../app/webroot/img/imgkhan/logo.png" align="logo">
                 <div class="text-center">
                     <h2 class="titleCursos">Cursos</h2>
                 </div>
@@ -67,7 +66,7 @@
                     success: function(data) {
                         console.log(data);
                         if (data.length > 0) {
-                            window.location.assign("inicio.html");
+                            window.location.assign("inicio");
                         }
                     },
                     error: function(xhr, ajaxOptions, thrownError) {
